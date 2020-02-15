@@ -1,8 +1,9 @@
 package lecture1;
+import java.util.*;
 
 public class BubbleRec {
     public static void main(String[] args) {
-        int a[]={1,5,2,4,7,9};
+        int a[]={6,5,4,3,2};
         int i=0,j=0;
         bubble(a,i,j);
         for(int k=0;k<a.length;k++)
@@ -21,8 +22,6 @@ public class BubbleRec {
     a[j]=a[j+1];
     a[j+1]=temp;
     }
-
-
         return bubble(a,i,j+1);
     }
 }
